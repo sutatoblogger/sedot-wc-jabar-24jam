@@ -2,23 +2,26 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="jXg4IWWebWxb8BX8YB-Q8mCLMW4JAiT-RfkrlUjGhjA" />
-    <link rel="preload" href="pusat-sedot-wc-jawa-barat-24-jam.webp" as="image" fetchpriority="high">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     
+    <link rel="preload" href="pusat-sedot-wc-jawa-barat-24-jam.webp" as="image" fetchpriority="high">
+    <meta name="google-site-verification" content="jXg4IWWebWxb8BX8YB-Q8mCLMW4JAiT-RfkrlUjGhjA" />
     <title>Pusat Sedot WC Jawa Barat 24 Jam - Layanan Terpadu & Terpercaya</title>
     <meta name="description" content="Pusat layanan Jasa Sedot WC dan saluran mampet se-Jawa Barat. Melayani 10 kota besar. Harga pasti Rp 400.000/Tangki (3 Kubik), gratis selang 20m. Pesan sekarang!">
     <meta name="keywords" content="pusat sedot wc jawa barat, sedot wc jabar 24 jam, jasa sedot wc murah jawa barat, nomor telepon sedot wc pusat, sedot septic tank jawa barat.">
     
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background-color: #f4f7f6; font-display: swap; }
-        .container { max-width: 900px; margin: 0 auto; background: #fff; padding: 40px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); border-top: 5px solid #2980b9; }
-        .header { text-align: center; border-bottom: 2px dashed #ddd; padding-bottom: 20px; margin-bottom: 30px; }
-        .header h1 { color: #2c3e50; font-size: 32px; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; }
-        .header p { color: #7f8c8d; font-size: 18px; font-weight: bold; }
+        /* OPTIMASI FONT: MENGGUNAKAN NATIVE SYSTEM FONT AGAR TEXT TIDAK BERGESER (0 CLS) */
+        body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background-color: #f4f7f6; }
         
-        /* OPTIMASI CLS (ANTI-GESER) */
-        .hero-image { width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover; border-radius: 8px; margin-bottom: 30px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block; background-color: #f0f0f0; }
+        .container { max-width: 900px; margin: 0 auto; background: #fff; padding: 40px 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); border-top: 5px solid #2980b9; }
+        .header { text-align: center; border-bottom: 2px dashed #ddd; padding-bottom: 20px; margin-bottom: 30px; }
+        .header h1 { color: #2c3e50; font-size: clamp(24px, 5vw, 32px); margin-bottom: 10px; text-transform: uppercase; letter-spacing: 1px; }
+        .header p { color: #7f8c8d; font-size: 18px; font-weight: bold; margin-top: 0; }
+        
+        /* OPTIMASI CLS GAMBAR: WRAPPER KAKU ANTI GESER */
+        .img-wrapper { width: 100%; aspect-ratio: 16/9; background-color: #e0e0e0; border-radius: 8px; overflow: hidden; margin-bottom: 30px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .hero-image { width: 100%; height: 100%; object-fit: cover; display: block; margin: 0; }
         
         h2, h3 { color: #2980b9; margin-top: 30px; }
         ul { padding-left: 20px; }
@@ -26,37 +29,17 @@
         .highlight-box { background-color: #e8f4fd; border-left: 5px solid #2980b9; padding: 20px; margin: 25px 0; border-radius: 4px; }
         
         /* TOMBOL WA PUSAT */
-        .wa-btn { display: block; width: 100%; max-width: 450px; margin: 40px auto; background-color: #25D366; color: white; text-align: center; padding: 18px 20px; font-size: 22px; font-weight: bold; text-decoration: none; border-radius: 50px; box-shadow: 0 6px 12px rgba(37, 211, 102, 0.3); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .wa-btn { display: block; width: 100%; max-width: 450px; margin: 40px auto; background-color: #25D366; color: white; text-align: center; padding: 18px 20px; font-size: clamp(18px, 4vw, 22px); font-weight: bold; text-decoration: none; border-radius: 50px; box-shadow: 0 6px 12px rgba(37, 211, 102, 0.3); transition: transform 0.3s ease, box-shadow 0.3s ease; box-sizing: border-box; }
         .wa-btn:hover { background-color: #1ebe57; transform: translateY(-3px); box-shadow: 0 8px 15px rgba(37, 211, 102, 0.4); }
         
-        /* GRID 10 KOTA */
-        .hub-section { background: #2c3e50; color: white; padding: 30px; margin-top: 50px; border-radius: 12px; text-align: center; box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
+        /* GRID 10 KOTA DENGAN JARING LABA-LABA SEO */
+        .hub-section { background: #2c3e50; color: white; padding: 30px 20px; margin-top: 50px; border-radius: 12px; text-align: center; box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
         .hub-section h3 { color: #f1c40f; margin-top: 0; font-size: 24px; border-bottom: 2px solid #34495e; padding-bottom: 15px; }
         .hub-section p { font-size: 16px; margin-bottom: 25px; color: #ecf0f1; }
-        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
-        .grid-item { background: #34495e; color: #fff; padding: 15px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px; border: 1px solid #465c73; transition: transform 0.3s, background-color 0.3s; display: flex; align-items: center; justify-content: center; }
-        .grid-item:hover { background: #f1c40f; color: #2c3e50; transform: translateY(-5px); border-color: #f1c40f; }
-        .grid-icon { margin-right: 8px; font-size: 18px; }
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; }
+        .grid-item { background: #34495e; color: #fff; padding: 15px; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 14px; border: 1px solid #465c73; transition: transform 0.3s, background-color 0.3s; display: flex; align-items: center; justify-content: center; }
+        .grid-item:hover { background: #f1c40f; color: #2c3e50; transform: translateY(-3px); border-color: #f1c40f; }
     </style>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "PlumbingService",
-          "@id": "https://sedot-wc-jabar-24jam.vercel.app/",
-          "name": "Markas Pusat Sedot WC Jawa Barat",
-          "image": "https://sedot-wc-jabar-24jam.vercel.app/pusat-sedot-wc-jawa-barat-24-jam.webp",
-          "description": "Markas pusat layanan jasa sedot WC dan pelancar saluran mampet meliputi 10 kota utama di Jawa Barat.",
-          "telephone": "+6285691636942",
-          "priceRange": "Rp 400.000",
-          "areaServed": { "@type": "State", "name": "Jawa Barat" },
-          "address": { "@type": "PostalAddress", "addressRegion": "Jawa Barat", "addressCountry": "ID" }
-        }
-      ]
-    }
-    </script>
 </head>
 <body>
 
@@ -66,7 +49,9 @@
         <p>Layanan Terpadu Sanitasi & Limbah Domestik 24 Jam</p>
     </div>
 
-    <img src="pusat-sedot-wc-jawa-barat-24-jam.webp" alt="Pusat Sedot WC Jawa Barat 24 Jam" class="hero-image" width="800" height="450" fetchpriority="high" loading="eager">
+    <div class="img-wrapper">
+        <img src="pusat-sedot-wc-jawa-barat-24-jam.webp" alt="Pusat Sedot WC Jawa Barat 24 Jam" class="hero-image" width="800" height="450" fetchpriority="high" loading="eager" decoding="sync">
+    </div>
 
     <h2>Selamat Datang di Pusat Komando Sedot WC Jabar!</h2>
     <p>Kami adalah jaringan layanan sanitasi dan sedot WC terbesar yang beroperasi melintasi berbagai kota strategis di Jawa Barat. Dengan pengalaman bertahun-tahun dan puluhan armada truk tangki vakum yang tersebar di titik-titik krusial, kami memastikan setiap panggilan darurat Anda tertangani dengan cepat, bersih, dan tuntas.</p>
@@ -90,16 +75,17 @@
         <p>Silakan klik wilayah terdekat dengan domisili Anda untuk melihat detail layanan khusus di kota Anda:</p>
         
         <div class="grid-container">
-            <a href="https://sedot-wc-bekasi.vercel.app/" class="grid-item"><span class="grid-icon">🏢</span> Kota Bekasi</a>
-            <a href="https://sedot-wc-bogor.vercel.app/" class="grid-item"><span class="grid-icon">🌧️</span> Kota Bogor</a>
-            <a href="https://sedot-wc-depok.vercel.app/" class="grid-item"><span class="grid-icon">🎓</span> Kota Depok</a>
-            <a href="https://sedot-wc-bandung.vercel.app/" class="grid-item"><span class="grid-icon">🏙️</span> Kota Bandung</a>
-            <a href="https://sedot-wc-kab-bekasi.vercel.app/" class="grid-item"><span class="grid-icon">🏭</span> Kab. Bekasi (Cikarang)</a>
-            <a href="https://sedot-wc-kab-bogor.vercel.app/" class="grid-item"><span class="grid-icon">🏡</span> Kab. Bogor (Cibinong)</a>
-            <a href="https://sedot-wc-kab-bandung.vercel.app/" class="grid-item"><span class="grid-icon">⛰️</span> Kab. Bandung (Soreang)</a>
-            <a href="https://sedot-wc-karawang.vercel.app/" class="grid-item"><span class="grid-icon">⚙️</span> Karawang</a>
-            <a href="https://sedot-wc-cimahi.vercel.app/" class="grid-item"><span class="grid-icon">🎖️</span> Cimahi</a>
-            <a href="https://sedot-wc-purwakarta.vercel.app/" class="grid-item"><span class="grid-icon">🛣️</span> Purwakarta</a>
+            <a href="https://sedot-wc-jabar-24jam.vercel.app/" title="Pusat Sedot WC Jawa Barat" class="grid-item">🏢 MARKAS PUSAT JABAR</a>
+            <a href="https://sedot-wc-bekasi.vercel.app/" title="Jasa Sedot WC Kota Bekasi" class="grid-item">📍 Kota Bekasi</a>
+            <a href="https://sedot-wc-bogor.vercel.app/" title="Jasa Sedot WC Kota Bogor" class="grid-item">📍 Kota Bogor</a>
+            <a href="https://sedot-wc-depok.vercel.app/" title="Jasa Sedot WC Depok" class="grid-item">📍 Kota Depok</a>
+            <a href="https://sedot-wc-bandung.vercel.app/" title="Jasa Sedot WC Bandung" class="grid-item">📍 Kota Bandung</a>
+            <a href="https://sedot-wc-kab-bekasi.vercel.app/" title="Jasa Sedot WC Kab. Bekasi" class="grid-item">📍 Kab. Bekasi</a>
+            <a href="https://sedot-wc-kab-bogor.vercel.app/" title="Jasa Sedot WC Kab. Bogor" class="grid-item">📍 Kab. Bogor</a>
+            <a href="https://sedot-wc-kab-bandung.vercel.app/" title="Jasa Sedot WC Kab. Bandung" class="grid-item">📍 Kab. Bandung</a>
+            <a href="https://sedot-wc-karawang.vercel.app/" title="Jasa Sedot WC Karawang" class="grid-item">📍 Karawang</a>
+            <a href="https://sedot-wc-cimahi.vercel.app/" title="Jasa Sedot WC Cimahi" class="grid-item">📍 Cimahi</a>
+            <a href="https://sedot-wc-purwakarta.vercel.app/" title="Jasa Sedot WC Purwakarta" class="grid-item">📍 Purwakarta</a>
         </div>
     </div>
 
